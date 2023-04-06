@@ -1,0 +1,287 @@
+.w-110 {
+    width: 30rem;
+}
+
+.h-110 {
+    height: 30rem;
+}
+
+.w-130 {
+    width: 36rem;
+}
+
+.h-130 {
+    height: 36rem;
+}
+
+.w-150 {
+    width: 40rem;
+}
+
+.h-150 {
+    height: 40rem;
+}
+
+.w-170 {
+    width: 42rem;
+}
+
+.h-170 {
+    height: 42rem;
+}
+
+.w-200 {
+    width: 60rem;
+}
+
+.h-200 {
+    height: 60rem;
+}
+
+.w-270 {
+    width: 65rem;
+}
+
+.h-270 {
+    height: 65rem;
+}
+.w-300 {
+    width: 100-rem;
+}
+
+.h-300 {
+    height: 85rem;
+}
+
+@media (max-width: 766px) {
+    .w-110 {
+        width: 18rem;
+    }
+    .h-110 {
+        width: 18rem;
+    }
+    .w-130 {
+        width: 22rem;
+    }
+    
+    .h-130 {
+        height: 22rem;
+    }
+    .w-150 {
+        width: 26rem;
+    }
+    
+    .h-150 {
+        height: 26rem;
+    }
+    .w-170 {
+        width: 36rem;
+    }
+    
+    .h-170 {
+        height: 36rem;
+    }
+    .w-270 {
+        width: 45rem;
+    }
+    
+    .h-270 {
+        height: 45rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .w-110 {
+        width: 25rem;
+    }
+    .h-110 {
+        height: 25rem;
+    }
+
+    .w-130 {
+        width: 28rem;
+    }
+    
+    .h-130 {
+        height: 28rem;
+    }
+}
+
+.z-last {
+    z-index: -99999999999999999999999;
+}
+
+.z-fast {
+    z-index: 99999999999999999999999;
+}
+
+
+.moon {
+    border-radius: 50%;
+    box-shadow: 0px -63px 0 -15px  rgba(158, 140, 168, 0.453) ;
+  }
+  .moon2 {
+    border-radius: 50%;
+    box-shadow: 0px -65px 0 0px rgb(158 140 168);
+  }
+  .moon3 {
+    border-radius: 100% 100% 0% 0% / 140% 140% 0% 0%;
+  }
+
+.half-circle {
+    border-radius: 0% 0% 50% 50% / 0% 0% 100% 100%;
+}
+
+.top-1\/5 {
+    top: 10%;
+}
+.left-1\/5 {
+    left: 20%;
+}
+
+.summer-class-half-round::after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 70%;
+    background-color: rgba(186, 173, 193, 0.406);
+    position: absolute;
+    top: -5%;
+    left: 0;
+    z-index: -1;
+    border-radius: 100% 100% 100% 100% / 100% 100% 0% 0%;
+}
+
+.rounded-tl-32rem {
+    border-top-left-radius: 32rem;/*500px*/
+}
+.rounded-tr-32rem {
+    border-top-right-radius: 32rem;/*500px*/
+}
+
+.upright-text {
+    writing-mode: vertical-lr; 
+    text-orientation: upright;
+}
+
+.background-image {
+    background-image: url('')
+}
+
+.clip-path-circle {
+    -webkit-clip-path: circle(100% at 50% 293%);
+    clip-path: circle(100% at 50% 293%); 
+}
+
+.clip-path-ellipse{     
+    -webkit-clip-path: ellipse(71% 98% at 50% 100%);
+    clip-path: ellipse(71% 98% at 50% 100%);
+}
+
+.clip-path-ellipse:last-child {
+    -webkit-clip-path: ellipse(71% 97% at 53% 100%);
+    clip-path: ellipse(70% 100% at 50% 100%);
+}
+
+.animate-1 {
+    animation-name: Movelr;
+    animation-duration: 1.5s;
+
+}
+@keyframes Movelr {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-2 {
+    animation-name: Moverl;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+
+}
+@keyframes Moverl {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-3 {
+    animation-name: Movebt;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+
+}
+@keyframes Movebt {
+    0% {
+        opacity: 0;
+        transform: translatey(50px);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
+.animate-1-h:hover .animate-1-h {
+    animation-name: Movelr;
+    animation-duration: 500ms;
+}
+
+.animate-1-h:hover .animate-2-h {
+    animation-name: Moverl;
+    animation-duration: 500ms;
+    animation-delay: 500ms;
+    animation-fill-mode: backwards;
+}
+
+.animate-1-h:hover .animate-3-h {
+    animation-name: Movebt;
+    animation-duration: 500ms;
+    animation-delay: 1000ms;
+    animation-fill-mode: backwards;
+}
+
+
+
+
+
+
+table {
+    position: sticky;
+    top: -1px;
+    z-index: 10;
+}
+
+.hero-back {
+    background-image: url(Image/Hero/hero.jpg);
+}
+
+.crust-site-footer .crust-element-80 {
+    margin-bottom: 0px !important;
+}
+
+.crust-gallery-wrapper::before {
+    display: none;
+}
